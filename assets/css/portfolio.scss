@@ -111,20 +111,20 @@ hr{
 
 #entrance {
   width: 100%;
-  background-image: url("/assets/imgs/bg1.png");
+  background-image: url("../imgs/bg1.png");
   background-repeat: repeat;
 }
 
 #about {
   width: 100%;
-  background-image: url("/assets/imgs/bg2.png");
+  background-image: url("../imgs/bg2.png");
   background-repeat: repeat;
   color : $color-4;
 }
 
 #interests{
   width: 100%;
-  background-image: url("/assets/imgs/bg3.png");
+  background-image: url("../imgs/bg3.png");
   background-repeat: repeat;
   color : $color-4;
 }
@@ -166,7 +166,7 @@ hr{
   top: 15%;
   left: 10%;
   padding: 0 20px 30px 20px;
-  background-image: url("/assets/imgs/bg3.png");
+  background-image: url("../imgs/bg3.png");
   background-repeat: repeat;
   color : $color-4;
 }
@@ -184,7 +184,7 @@ hr{
 {
   float: right;
   margin-right: -30px;
-  background-image: url("/assets/imgs/bg3.png");
+  background-image: url("../imgs/bg3.png");
   background-repeat: repeat;
   border: 1px solid white;
   border-radius: 1rem;
@@ -198,14 +198,14 @@ hr{
 
 #contact{
   width: 100%;
-  background-image: url("/assets/imgs/bg4.png");
+  background-image: url("../imgs/bg4.png");
   background-repeat: repeat;
   color : $color-1;
 }
 
 #logo
 {
-  background-image: url("/assets/imgs/logo.png");
+  background-image: url("../imgs/logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -241,7 +241,7 @@ input[type=text], input[type=email], textarea {
 
 footer{
   width: 100%;
-  background-image: url("/assets/imgs/bg5.png");
+  background-image: url("../imgs/bg5.png");
   background-repeat: repeat;
   color : $color-3;
 }
