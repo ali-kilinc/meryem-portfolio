@@ -1,0 +1,255 @@
+$font-stack:    'Oldenburg', cursive;
+
+$color-1 : #f9ebd9;
+$color-2 : #e3dfd7;
+$color-3 : #4c4f51;
+$color-4 : #1e2022;
+$color-x : #d45244;
+
+
+/* shadowed items */
+%shadowed
+{
+  -webkit-box-shadow: 2px 2px 5px 0px $color-3;
+  -moz-box-shadow: 2px 2px 5px 0px $color-3;
+  box-shadow: 2px 2px 5px 0px $color-3;
+}
+
+body{
+  font-family: $font-stack;
+  color: $color-1;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2
+{
+  font-size: 2rem;
+}
+
+h3
+{
+  font-size: 1rem;
+}
+
+@media (min-width: 962px) and (max-width:1300px) {  
+  h1 {font-size:4rem;} 
+  h2 {font-size:2.5rem;}  
+  h3 {font-size:2rem;} 
+}
+
+@media (min-width: 1300px) {  
+  h1 {font-size:5rem;} 
+  h2 {font-size:3rem;} 
+  h3 {font-size:2rem;} 
+}
+
+p{
+  font-size: 0.9rem;
+}
+
+@media (min-width: 962px) and (max-width:1300px) { 
+  p {font-size:1.1rem;} 
+}
+
+@media (min-width: 1300px) {  
+  p {font-size:1.3rem;} 
+}
+
+nav a{
+  color: $color-1;
+  font-size: 1.4rem;
+}
+
+a:hover{
+  color : $color-3;
+}
+
+a {
+  color : $color-x;
+  text-decoration: underline;
+}
+
+#popup img{
+  width: 100%;
+}
+
+::selection
+{
+  color : $color-1;
+  background-color: $color-x;
+}
+
+.dark
+{
+  color:$color-4;
+  font-weight: bold;
+}
+
+.redish{
+  color: $color-x;
+}
+
+.light{
+  color : $color-1;
+}
+
+#navbarTogglerFontIcon
+{
+  color : $color-1;
+  padding: 0.6rem 0.3rem;
+}
+
+hr{
+  background-color: $color-4;
+  height: 2px;
+  width: 25vw;
+  margin: auto 1rem;
+}
+
+#entrance {
+  width: 100%;
+  background-image: url("/assets/imgs/bg1.png");
+  background-repeat: repeat;
+}
+
+#about {
+  width: 100%;
+  background-image: url("/assets/imgs/bg2.png");
+  background-repeat: repeat;
+  color : $color-4;
+}
+
+#interests{
+  width: 100%;
+  background-image: url("/assets/imgs/bg3.png");
+  background-repeat: repeat;
+  color : $color-4;
+}
+
+#travelmap {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-next, 
+.carousel-control-prev
+{
+  height: 15%;
+  top:auto;
+  bottom: 42.5%;
+}
+
+.carousel-control-next:hover, 
+.carousel-control-prev:hover
+{
+  color: $color-x;
+}
+
+
+#overlay {
+  position: fixed;
+  height: 100%; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  overflow: hidden;
+}
+
+#popup {
+  position: relative;
+  width: 80%;
+  top: 15%;
+  left: 10%;
+  padding: 0 20px 30px 20px;
+  background-image: url("/assets/imgs/bg3.png");
+  background-repeat: repeat;
+  color : $color-4;
+}
+
+@media (min-width: 1300px) {  
+  
+  #popup {
+    width: 58%;
+    left:21%;
+    top:10%;
+  }  
+}
+
+#popupClose
+{
+  float: right;
+  margin-right: -30px;
+  background-image: url("/assets/imgs/bg3.png");
+  background-repeat: repeat;
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin-top: -15px;
+}
+
+#popupClose:hover
+{
+  cursor: pointer;
+}
+
+#contact{
+  width: 100%;
+  background-image: url("/assets/imgs/bg4.png");
+  background-repeat: repeat;
+  color : $color-1;
+}
+
+#logo
+{
+  background-image: url("/assets/imgs/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card-header{
+  background-color: $color-x;
+}
+
+.card-body{
+  background-color: $color-2;
+  border : 1px solid $color-x;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color:$color-1;
+  color : $color-3;
+}
+
+.btn-send{
+    color: $color-3;
+    background-color: $color-1;
+    border-color: $color-3;
+}
+
+footer{
+  width: 100%;
+  background-image: url("/assets/imgs/bg5.png");
+  background-repeat: repeat;
+  color : $color-3;
+}
+
+.footer-icon{
+  font-size: 2rem;
+  margin: 1rem;
+  border: 2px solid $color-3;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
