@@ -221,10 +221,19 @@ input[type=text], input[type=email], textarea {
   color: #4c4f51;
 }
 
+#subject-input {
+  height: 200px;
+}
+
 .btn-send {
   color: #4c4f51;
   background-color: #f9ebd9;
   border-color: #4c4f51;
+}
+
+#contact-success-message,
+#contact-error-message {
+  display: none;
 }
 
 footer {

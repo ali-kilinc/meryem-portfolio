@@ -161,17 +161,21 @@
         <div class="mb-5 w-100 d-flex justify-content-center"><hr class="d-inline-block"/><span class="dark"> X X X</span><hr class="d-inline-block"/></div>
         <p class="text-center light mb-5"> Get in touch with me  <i class="light far fa-smile-wink"></i></p>
         <div class="container">
-            <form action="/action_page.php">
+            <form id="contact-form" method="POST">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name...">
+              <input type="text" id="name-input" name="name" placeholder="Your name...">
           
               <label for="email">E-Mail Adress</label>
-              <input type="email" id="email" name="email" placeholder="Your e-mail adress...">
+              <input type="text" id="email-input" name="email" placeholder="Your e-mail adress...">
           
               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Anything you want to say..." style="height:200px"></textarea>
+              <textarea id="subject-input" name="subject" placeholder="Anything you want to say..."></textarea>
           
-              <input class="btn btn-send" type="submit" value="Send">
+              <button class="mb-3 btn btn-send" type="submit">Send</button>
+              
+              <div id="contact-success-message" class="alert alert-success" role="alert">Great! I've got your message. I'll response you as soon as possible. Thank you <i class="fas fa-smile"></i></div>
+              <div id="contact-error-message" class="alert alert-danger" role="alert"></div>
+
             </form>
           </div>
     </section>
