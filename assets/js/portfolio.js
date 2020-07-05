@@ -175,9 +175,9 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://5m7uvz6e83.execute-api.us-east-2.amazonaws.com/contact",
+            url: "https://5m7uvz6e83.execute-api.us-east-2.amazonaws.com/contact/contact",
             dataType: "json",
-            crossDomain: "true",
+            crossDomain: true,
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(data),
 
