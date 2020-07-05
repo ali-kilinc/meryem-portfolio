@@ -136,8 +136,6 @@ $(document).ready(function () {
         $("#contact-success-message").slideUp();
         $("#contact-error-message").slideUp();
 
-        var URL = "https://abc1234.execute-api.us-east-1.amazonaws.com/01/contact";
-
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#name-input").val())) {
 
