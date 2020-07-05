@@ -116,19 +116,16 @@ $(document).ready(function () {
 
 
             if (i == 0) {
-                carouselItem = `<div class="carousel-item active">`;
+                carouselItem = '<div class="carousel-item active">';
             }
             else {
-                carouselItem = `<div class="carousel-item">`;
+                carouselItem = '<div class="carousel-item">';
             }
 
-            carouselItem += zone.carouselItems[i] + `</div>`;
+            carouselItem += zone.carouselItems[i] + '</div>';
             $("#carouselInner").append(carouselItem);
         }
-
-        var info = `<h3>${zone.title}</h3>`;
-        info += `<p>${zone.explanation}</p>`;
-
+        var info = '<h3>' + zone.title + '</h3>' + '<p>' + zone.explanation + '</p>';
         $("#zoneDetailInfo").append(info);
     }
 
