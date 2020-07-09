@@ -116,6 +116,10 @@ hr {
   color: #1e2022;
 }
 
+.list-group-item {
+  background-color: #e3dfd7;
+}
+
 #interests {
   width: 100%;
   background-image: url("../imgs/bg3.png");
